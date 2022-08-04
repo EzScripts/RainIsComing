@@ -1,3 +1,3 @@
-# Vape V4
-**When you make a script for 3 years, and blow up on a ripoff lego game**
-_Project I made becasue I want to expand my creativity_
+# RainIsComing
+**Dont intend on using this just vape experiment**
+_Im not tryna crack vape dw, its already been done_
