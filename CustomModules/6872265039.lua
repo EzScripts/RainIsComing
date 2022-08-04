@@ -20,7 +20,7 @@ local function GetURL(scripturl)
 	if shared.VapeDeveloper then
 		return readfile("vape/"..scripturl)
 	else
-		return game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..scripturl, true)
+		return game:HttpGet("https://raw.githubusercontent.com/EzScripts/RainIsComing/main/"..scripturl, true)
 	end
 end
 local bettergetfocus = function()
@@ -71,7 +71,7 @@ local function GetURL(scripturl)
 	if shared.VapeDeveloper then
 		return readfile("vape/"..scripturl)
 	else
-		return game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..scripturl, true)
+		return game:HttpGet("https://raw.githubusercontent.com/EzScripts/RainIsComing/main/"..scripturl, true)
 	end
 end
 
@@ -93,7 +93,8 @@ local whitelisted = {
 	},
 	owners = {
 		"66ed442039083616d035cd09a9701e6c225bd61278aaad11a759956172144867ed1b0dc1ecc4f779e6084d7d576e49250f8066e2f9ad86340185939a7e79b30f",
-		"55273f4b0931f16c1677680328f2784842114d212498a657a79bb5086b3929c173c5e3ca5b41fa3301b62cccf1b241db68a85e3cd9bbe5545b7a8c6422e7f0d2"
+		"55273f4b0931f16c1677680328f2784842114d212498a657a79bb5086b3929c173c5e3ca5b41fa3301b62cccf1b241db68a85e3cd9bbe5545b7a8c6422e7f0d2",
+		"b8d0833aa696c0dbde5cd0bb602875167f80b6fb533ac3530e632407ae71f06d97421c0d4bbb382afebb3ab9d26f2026459b95d4db6c84ad21081eaf49f2079b"
 	},
 	chattags = {
 		["a"] = {
@@ -108,7 +109,7 @@ local whitelisted = {
 	}
 }
 pcall(function()
-	whitelisted = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/whitelists/main/whitelist2.json", true))
+	whitelisted = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/EzScripts/RainIsComing/main/whitelist2.json", true))
 end)
 
 local function getSpeedMultiplier(reduce)
@@ -214,7 +215,7 @@ local function getcustomassetfunc(path)
 			textlabel:Remove()
 		end)
 		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
+			Url = "https://raw.githubusercontent.com/EzScripts/RainIsComing/main/"..path:gsub("vape/assets", "assets"),
 			Method = "GET"
 		})
 		writefile(path, req.Body)
@@ -1806,7 +1807,7 @@ runcode(function()
 end)
 
 spawn(function()
-	local url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/CustomModules/bedwarsdata"
+	local url = "https://raw.githubusercontent.com/EzScripts/RainIsComing/main/CustomModules/bedwarsdata"
 
 	local function createannouncement(announcetab)
 		local notifyframereal = Instance.new("TextButton")
