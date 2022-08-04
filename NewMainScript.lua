@@ -1534,6 +1534,19 @@ GuiLibrary["SelfDestruct"] = function()
 end
 
 GeneralSettings.CreateButton2({
+	["Name"] = "Private Mode", 
+	["Function"] = function()
+		local vapeprivate = shared.VapePrivate
+		GuiLibrary["SelfDestruct"]()
+		shared.VapeSwitchServers = true
+		shared.VapeOpenGui = true
+		shared.VapePrivate = false
+        shared.VapeDeveloper = true
+		loadstring(GetURL("NewMainScript.lua"))()
+	end
+})
+
+GeneralSettings.CreateButton2({
 	["Name"] = "RESET CURRENT PROFILE", 
 	["Function"] = function()
 		local vapeprivate = shared.VapePrivate
